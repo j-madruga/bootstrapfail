@@ -16,7 +16,7 @@
 .container article {
     width: 18%;
     height: 600px;
-    border: 2px dashed red;
+    border: 2px dashed blue;
     margin-bottom: 2rem;
 }
 
