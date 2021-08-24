@@ -14,9 +14,11 @@ body {
 }
 footer {
     background-color: #ff0000;
-    color: #494444;
+    color: #706e6e;
 }
-
+h2 {
+    font-weight: 300;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +32,7 @@ footer {
   border: 2px dashed red;
   padding: 1%;
   margin: 2%;
+  align-items: center;
 }
 
 /* css del carrousel  */
@@ -148,6 +151,7 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #c11111;
 }
+/* cards individuales */
 
 /* unos media queries boludos pq me molestaba sino JA ~ cam*/
 @media (max-width: 768px) {
