@@ -477,88 +477,7 @@ section .flipcard-container:hover .flipcard {
     font-weight: 700;
 }
 
-/* FLOR DH */
-.flor-dh {
-    padding: 2%;
-}
-section .flipcard-container2 {
-    perspective: 1000px;
-    border: none;
-}
 
-section .flipcard2 {
-    position: relative;
-    background-color: white;
-    color: black;
-    font-size: 78%;
-    padding: 2%;
-    border: transparent !important;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.7s;
-    transform-style: preserve-3d;
-}
-
-section .flipcard-container2:hover .flipcard2 {
-    transform: rotateY(180deg);
-}
-
-.flipcard2>div:nth-child(1),
-.flipcard2>div:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flipcard2>div:nth-child(1) {
-    width: 100%;
-    height: 100%;
-}
-
-.flipcard2>div:nth-child(1)>div,
-.flipcard2>div:nth-child(2)>div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flipcard2>div:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.flipcard2>div:nth-child(2)>div h2 {
-    margin-bottom: 2rem;
-    z-index: 5;
-}
-
-.flipcard2>div:nth-child(2)>div p:nth-last-child(2) {
-    z-index: 5;
-}
-
-.flipcard2>div:nth-child(2)>div p:nth-last-child(1) {
-    margin-top: 2rem;
-    margin-left: 12rem;
-    z-index: 5;
-}
-
-.flipcard2>div:nth-child(2) {
-    width: 100%;
-    height: 100%;
-    transform: rotateY(180deg);
-}
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
@@ -594,3 +513,144 @@ h2 {
         width: 100%;
     }
 }
+
+/*---------------Angel----------------------------------------*/
+.angel .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angel .contenedor .card {
+    width: 100%;
+    height: 395px;    
+    position: relative;
+    perspective: 1000px;
+
+}
+
+.angel .contenedor .card .sides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.angel .left-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)),        url(https://st.depositphotos.com/1795881/1409/i/950/depositphotos_14099763-stock-photo-black-diamond-facet-background.jpg) no-repeat;
+    background: cover;
+    background-position-x: 0;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+.angel .right-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://st.depositphotos.com/1795881/1409/i/950/depositphotos_14099763-stock-photo-black-diamond-facet-background.jpg) no-repeat;
+    background: cover;
+    background-position-x: -180px;
+    transform: rotateY(0);
+    transform-origin: right;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+}
+
+.angel .back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://conceptodefinicion.de/wp-content/uploads/2020/10/color.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: brown;
+    z-index: -1;
+    box-shadow: 40px 40px 80px #000;
+    transform: translateZ(-300px);
+    transition: z-index 0.4s step-end, transform 1s    box-shadow 1s;
+    -webkit-transition: z-index 0.4s step-end, transform 1s;
+    -moz-transition: z-index 0.4s step-end, transform 1s;
+    -ms-transition: z-index 0.4s step-end, transform 1s;
+    -o-transition: z-index 0.4s step-end, transform 1s;
+    -webkit-transform: translateZ(-300px);
+    -moz-transform: translateZ(-300px);
+    -ms-transform: translateZ(-300px);
+    -o-transform: translateZ(-300px);
+}
+
+.angel .card:hover .left-side {
+    transform: rotateY(-360deg);
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+}
+
+.angel .card:hover .right-side {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+}
+
+.angel .card:hover .back-side {
+    transform: translateZ(0);
+    box-shadow: 50px 50px 100px #000;
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+}
+
+.angel .name,.name2 {
+    color: #fff;
+    font-size: 16px;
+    margin: 20px 2px;
+}
+.angel .left-side .name{
+    text-align: right;
+}
+.angel .right-side .name2{
+    text-align: left;
+}
+
+.angel .texto {
+    color: #fff;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/*---------------------------termina Angel--------------------*/
