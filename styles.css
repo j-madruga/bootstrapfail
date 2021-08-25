@@ -353,7 +353,8 @@ section .flipcard-container:hover .flipcard {
     justify-content: flex-end;
     align-content: center;
     backgound-position: cover;
-    background-position: center center;
+    background-position: center;
+    background-repeat: no-repeat;
     font-size: 13px;
 }
 
