@@ -352,8 +352,7 @@ section .flipcard-container:hover .flipcard {
     flex-direction: column;
     justify-content: flex-end;
     align-content: center;
-    backgound-position: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     font-size: 13px;
 }
