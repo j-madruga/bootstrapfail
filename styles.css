@@ -346,10 +346,17 @@ section .flipcard-container:hover .flipcard {
   }
   
 /* Articulo de Flor A*/
-/* .florA {
-
+.florA {
+    background: url('https://c.tenor.com/2AQ2iBuWgtIAAAAC/jungkook-bts.gif');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    backgound-position: cover;
+    background-position: center center;
+    font-size: 13px;
 }
- */
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
