@@ -346,20 +346,10 @@ section .flipcard-container:hover .flipcard {
   }
   
 /* Articulo de Flor A*/
-.florA {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    align-content: flex-end;
-    text-align: center;
-    justify-content: flex-end;
-    font-size: 14px;
-}
+/* .florA {
 
+}
+ */
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
