@@ -355,6 +355,7 @@ section .flipcard-container:hover .flipcard {
     background-position: top;
     background-repeat: no-repeat;
     font-size: 13px;
+    font-weight: bolder;
 }
 
 /* Artículo de Mariela ᓚᘏᗢ */
