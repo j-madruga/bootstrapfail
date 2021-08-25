@@ -750,7 +750,7 @@ section .flipcard-container2:hover .flipcard2 {
   
   #Juan_R p {
    
-    
+    color:#fff;
     z-index: 2;
     opacity: 0.5;
     transition: 0.5s;
