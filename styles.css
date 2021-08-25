@@ -360,6 +360,7 @@ section .flipcard-container:hover .flipcard {
 
 /* Artículo de Mariela ᓚᘏᗢ */
 #Mariela_20{
+    padding: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     color: #ff4099;
