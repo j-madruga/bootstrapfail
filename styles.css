@@ -299,7 +299,6 @@ section .flipcard-container:hover .flipcard {
     transform: rotateY(180deg);
 }
 #maldonadoTomas .container div p.center {
-    font-size: 1rem;
     font-weight: 600;
 }
 #maldonadoTomas:hover .container div {
