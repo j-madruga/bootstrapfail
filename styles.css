@@ -312,7 +312,40 @@ section .flipcard-container:hover .flipcard {
     z-index: 10;
 }
 
-
+/* Articulo de Guido*/
+.Guido{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.pinimg.com/originals/86/b2/52/86b2521ebaa17c8a89f85609809bd9a6.webp');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+.Guido:hover{
+    animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+.Guido div{
+    background-color: rosybrown;
+}
+@keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
