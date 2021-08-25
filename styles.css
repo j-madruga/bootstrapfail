@@ -362,6 +362,56 @@ section .flipcard-container:hover .flipcard {
     font-size: 14px;
 }
 
+/* Artículo de Mariela ᓚᘏᗢ */
+#Mariela_20{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #ff4099;
+    background-color: white;
+    display: flex;
+    flex-direction:column-reverse;
+    animation-name:mariela;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+  }
+  #Mariela_20>p{
+    font-size:2rem;
+  }
+  
+  #Mariela_20>p:hover {
+    color: rgb(224, 72, 72);
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    animation-name: heartMariela;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes heartMariela{
+    0%, 50% {transform:scale(1.5);color: rgb(255, 73, 185) }
+    25%, 100% {transform:scale(1); color: rgb(224, 72, 72)}
+  }
+  @keyframes mariela{
+    0%{background-image:url(./img/Mariela5.png);
+      background-repeat: no-repeat;
+    }
+    20%{background-image:url(./img/Mariela1.png);
+       background-repeat: no-repeat;
+      }
+    40%{background-image:url(./img/Mariela2.png);
+      background-repeat: no-repeat;
+      }
+    60%{background-image:url(./img/Mariela3.png);
+      background-repeat: no-repeat;
+      }
+    80%{background-image:url(./img/Mariela4.png);
+      background-repeat: no-repeat;
+      }
+    100%{background-image:url(./img/Mariela5.png);
+      background-repeat: no-repeat;
+      }
+  }
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
