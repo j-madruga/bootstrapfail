@@ -478,9 +478,6 @@ section .flipcard-container:hover .flipcard {
 }
 
 /* FLOR DH */
-.flor-dh {
-    padding: 2%;
-}
 section .flipcard-container2 {
     perspective: 1000px;
     border: none;
@@ -559,6 +556,12 @@ section .flipcard-container2:hover .flipcard2 {
     height: 100%;
     transform: rotateY(180deg);
 }
+/* CAM */
+.cam {
+    background-color: transparent !important;
+    color: slateblue !important;
+}
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
