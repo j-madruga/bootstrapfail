@@ -442,6 +442,20 @@ section .flipcard-container:hover .flipcard {
     }
 }
 
+/*Articulo de Natali*/
+.natali {
+    background-image: url(./img/NataliCorrea.jpg);
+    background-size: cover;
+}
+
+p {
+    color:#222222;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 0.5rem;
+    font-weight: 700;
+}
+
 
 /* Artículo de Angie arre*/
 
