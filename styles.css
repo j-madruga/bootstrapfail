@@ -257,7 +257,9 @@ section .flipcard-container:hover .flipcard {
     transform: rotateY(180deg);
 }
 
+
 /* TOMAS */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 #maldonadoTomas {
     height: 400px;
@@ -268,6 +270,7 @@ section .flipcard-container:hover .flipcard {
     position: relative;
     border: none;
 }
+
 #maldonadoTomas .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -277,6 +280,7 @@ section .flipcard-container:hover .flipcard {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
+
 #maldonadoTomas .container div {
     width: 130px;
     height: 80px;
@@ -288,31 +292,37 @@ section .flipcard-container:hover .flipcard {
     background: url(https://www.photos-public-domain.com/wp-content/uploads/2018/05/black-card-stock-paper-texture-600x450.jpg);
     transition: all 0.3s ease-in;
     z-index: 0;
-    box-shadow: 1px 1px 1px black, 1px 1px 5px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 1px black, 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-#maldonadoTomas .container div p{
-    font-family: 'Roboto', sans-serif; 
+
+#maldonadoTomas .container div p {
+    font-family: 'Roboto', sans-serif;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     font-weight: 400;
     color: darkcyan;
     transform: rotateY(180deg);
 }
+
 #maldonadoTomas .container div p.center {
     font-weight: 600;
 }
+
 #maldonadoTomas:hover .container div {
     transform-style: preserve-3d;
     transform: rotateY(180deg);
 }
+
 #maldonadoTomas .container div:hover {
     transform: rotateY(180deg) translate(-20px, -15px);
-    box-shadow: 1px 1px 1px black, 20px 15px 20px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 1px black, 20px 15px 20px rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
 
+
 /* Articulo de Guido*/
-.Guido{
+
+.Guido {
     top: 0;
     left: 0;
     width: 100%;
@@ -324,28 +334,33 @@ section .flipcard-container:hover .flipcard {
     justify-content: center;
     color: red;
 }
-.Guido:hover{
+
+.Guido:hover {
     animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
-.Guido div{
+
+.Guido div {
     background-color: rosybrown;
 }
+
 @keyframes pulsate-bck {
     0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
     50% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}
+
+
 /* Articulo de Flor A*/
+
 .florA {
     background: url('https://c.tenor.com/2AQ2iBuWgtIAAAAC/jungkook-bts.gif');
     display: flex;
@@ -358,74 +373,111 @@ section .flipcard-container:hover .flipcard {
     font-weight: bolder;
 }
 
+
 /* Artículo de Mariela ᓚᘏᗢ */
-#Mariela_20{
+
+#Mariela_20 {
     padding: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     color: #ff4099;
     background-color: white;
     display: flex;
-    flex-direction:column-reverse;
-    animation-name:mariela;
+    flex-direction: column-reverse;
+    animation-name: mariela;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-  }
-  #Mariela_20>p{
-    font-size:2rem;
-  }
-  
-  #Mariela_20>p:hover {
+}
+
+#Mariela_20>p {
+    font-size: 2rem;
+}
+
+#Mariela_20>p:hover {
     color: rgb(224, 72, 72);
     font-size: 2rem;
     margin-left: 0.5rem;
     animation-name: heartMariela;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes heartMariela{
-    0%, 50% {transform:scale(1.5);color: rgb(255, 73, 185) }
-    25%, 100% {transform:scale(1); color: rgb(224, 72, 72)}
-  }
-  @keyframes mariela{
-    0%{background-image:url(./img/Mariela5.png);
-      background-repeat: no-repeat;
-    }
-    20%{background-image:url(./img/Mariela1.png);
-       background-repeat: no-repeat;
-      }
-    40%{background-image:url(./img/Mariela2.png);
-      background-repeat: no-repeat;
-      }
-    60%{background-image:url(./img/Mariela3.png);
-      background-repeat: no-repeat;
-      }
-    80%{background-image:url(./img/Mariela4.png);
-      background-repeat: no-repeat;
-      }
-    100%{background-image:url(./img/Mariela5.png);
-      background-repeat: no-repeat;
-      }
-  }
+}
 
-  /* Artículo de Angie arre*/
-  
-  #angie{
+@keyframes heartMariela {
+    0%,
+    50% {
+        transform: scale(1.5);
+        color: rgb(255, 73, 185)
+    }
+    25%,
+    100% {
+        transform: scale(1);
+        color: rgb(224, 72, 72)
+    }
+}
+
+@keyframes mariela {
+    0% {
+        background-image: url(./img/Mariela5.png);
+        background-repeat: no-repeat;
+    }
+    20% {
+        background-image: url(./img/Mariela1.png);
+        background-repeat: no-repeat;
+    }
+    40% {
+        background-image: url(./img/Mariela2.png);
+        background-repeat: no-repeat;
+    }
+    60% {
+        background-image: url(./img/Mariela3.png);
+        background-repeat: no-repeat;
+    }
+    80% {
+        background-image: url(./img/Mariela4.png);
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url(./img/Mariela5.png);
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* Artículo de Angie arre*/
+
+#angie {
     background-color: rgb(248, 195, 195);
     color: white;
     font-size: 1rem;
     text-align: center;
 }
+
 #angie i {
-    color:red;
+    color: red;
     font-size: 35px;
-    padding:0 15px;
+    padding: 0 15px;
     transition: all 1s;
 }
+
 #angie i:hover {
     font-size: 60px;
 }
+
+
+/* articulo flor diaz */
+
+.flor-d {
+    background-image: url('./img/flor-diaz.jpeg');
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.flor-d h2 {
+    margin: 0.5rem;
+    font-weight: 700;
+}
+
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
