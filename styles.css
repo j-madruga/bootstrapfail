@@ -1592,6 +1592,14 @@ section .flipcardTwo-container:hover .flipcardTwo {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .face::before {
@@ -1604,10 +1612,25 @@ section .flipcardTwo-container:hover .flipcardTwo {
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
     transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
 }
 
 .face:hover::before {
     top: 210px;
+    width: 150px;
+    height: 20px;
+    background: #b57700;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    top: 130px;
     width: 150px;
     height: 20px;
     background: #b57700;
@@ -1629,6 +1652,13 @@ section .flipcardTwo-container:hover .flipcardTwo {
     background: #fff;
     margin: 0 15px;
     border-radius: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
 }
 
 .eyes .eye::before {
@@ -1639,6 +1669,15 @@ section .flipcardTwo-container:hover .flipcardTwo {
     transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
     background: #000;
     border-radius: 50%;
 }
@@ -1664,7 +1703,7 @@ h1.mateo_letra span {
     top: 20px;
     display: inline-block;
     -webkit-animation: bounce 0.3s ease infinite alternate;
-    font-size: 60px;
+    font-size: 40px;
     color: #fff;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
