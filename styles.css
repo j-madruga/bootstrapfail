@@ -1052,6 +1052,44 @@ section .flipcardTwo-container:hover .flipcardTwo {
 }
 
 
+/* CARD NANI  */
+
+#Nani {
+    background-image: url('./img/fondoNani.jpg');
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nani h2 {
+    font-family: 'Gloria Hallelujah';
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(48 85 112);
+    line-height: 2.5rem;
+    width: 80%;
+}
+
+#Nani h2:hover::after {
+    content: "Por la buena onda y las ganas de incentivarnos a seguir con Front!";
+    font-size: 1rem;
+    line-height: 0.1rem;
+}
+
+#Nani h2:hover::before {
+    content: "Nani.";
+    font-size: 1rem;
+    line-height: 0.1rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
