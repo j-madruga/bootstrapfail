@@ -1,5 +1,6 @@
 /* INDEX  */
 
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap%27');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
     margin: 0;
@@ -442,14 +443,16 @@ section .flipcard-container:hover .flipcard {
     }
 }
 
+
 /*Articulo de Natali*/
+
 .natali {
     background-image: url(./img/NataliCorrea.jpg);
     background-size: cover;
 }
 
 p {
-    color:#222222;
+    color: #222222;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin: 0.5rem;
@@ -491,7 +494,9 @@ p {
     font-weight: 700;
 }
 
+
 /* FLOR DH */
+
 section .flipcard-container2 {
     perspective: 1000px;
     border: none;
@@ -575,6 +580,7 @@ section .flipcard-container2:hover .flipcard2 {
     height: 100%;
     transform: rotateY(180deg);
 }
+
 
 /*---------------Angel----------------------------------------*/
 
@@ -718,13 +724,18 @@ section .flipcard-container2:hover .flipcard2 {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+
 /* CAM */
+
 .cam {
     background-color: transparent !important;
     color: slateblue !important;
 }
 
+
 /* Card Juan Diego Rivero */
+
 #Juan_R {
     position: relative;
     display: flex;
@@ -733,10 +744,9 @@ section .flipcard-container2:hover .flipcard2 {
     justify-content: center;
     background: #0c002b;
     overflow: hidden;
-  }
-  #Juan_R h2 {
-   
-    
+}
+
+#Juan_R h2 {
     z-index: 1;
     font-weight: bold;
     z-index: 2;
@@ -746,11 +756,10 @@ section .flipcard-container2:hover .flipcard2 {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-  }
-  
-  #Juan_R p {
-   
-    color:#fff;
+}
+
+#Juan_R p {
+    color: #fff;
     z-index: 2;
     opacity: 0.5;
     transition: 0.5s;
@@ -758,169 +767,157 @@ section .flipcard-container2:hover .flipcard2 {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-  }
-  #Juan_R h3 {
-      /* position: absolute; */
-      bottom: 1%;
-      z-index: 1;
-      font-weight: bold;
-      z-index: 2;
-      opacity: 0.5;
-      transition: 0.5s;
-      -webkit-transition: 0.5s;
-      -moz-transition: 0.5s;
-      -ms-transition: 0.5s;
-      -o-transition: 0.5s;
-    }
-  #Juan_R:hover p,
-  #Juan_R:hover h3,
-  #Juan_R:hover h2 {
-      opacity: 1;
-    }
-  
-  
-  
-  #Juan_R::before {
+}
+
+#Juan_R h3 {
+    /* position: absolute; */
+    bottom: 1%;
+    z-index: 1;
+    font-weight: bold;
+    z-index: 2;
+    opacity: 0.5;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#Juan_R:hover p,
+#Juan_R:hover h3,
+#Juan_R:hover h2 {
+    opacity: 1;
+}
+
+#Juan_R::before {
     content: " ";
     position: absolute;
     top: 2px;
     bottom: 2px;
     left: 2px;
     width: 50%;
-    background: rgba(255,255,255,0.1);
-  }
-  #Juan_R .card span{
-  transition: 0.5s;
-  
-  }
-  #Juan_R .card span:nth-child(1){
-      position:absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background:linear-gradient(to right, transparent, #1779ff);
-      animation: animate1 2s linear infinite;
-      -webkit-animation: animate1 2s linear infinite;
-  }
-  
-  @keyframes animate1
-  {
-  0%
-  {
-      transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      -moz-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      -o-transform: translateX(-100%);
-      
-  }
-  
-  100%
-  {
-      transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-  }
-  }
-  #Juan_R .card span:nth-child(2){
-      position:absolute;
-      top: 0;
-      right: 0;
-      width: 3px;
-      height: 100%;
-      background:linear-gradient(to bottom, transparent, #1779ff);
-      animation: animate2 2s linear infinite;
-      -webkit-animation: animate2 2s linear infinite;
-      animation-delay: 1s;
-  }
-  
-  @keyframes animate2
-  {
-  0%
-  {
-      transform: translateY(-100%);
-      -webkit-transform: translateY(-100%);
-      -moz-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-      -o-transform: translateY(-100%);
-  }
-  
-  100%
-  {
-      transform: translateY(100%);
-      -webkit-transform: translateY(100%);
-      -moz-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-      -o-transform: translateY(100%);
-  }
-  }
-  #Juan_R .card span:nth-child(3){
-      position:absolute;
-      bottom:0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background:linear-gradient(to left, transparent, #1779ff);
-      animation: animate3 2s linear infinite;
-      -webkit-animation: animate3 2s linear infinite;
-  }
-  
-  @keyframes animate3
-  {
-  0%
-  {
-      transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-  }
-  
-  100%
-  {
-      transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      -moz-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      -o-transform: translateX(-100%);
-  }
-  }
-  #Juan_R .card span:nth-child(4){
-      position:absolute;
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 100%;
-      background:linear-gradient(to top, transparent, #1779ff);
-      animation: animate4 1s linear infinite;
-      -webkit-animation: animate4 2s linear infinite;
-      animation-delay: 1s;
-  }
-  
-  @keyframes animate4
-  {
-  0%
-  {
-      transform: translateY(100%);
-      -webkit-transform: translateY(100%);
-      -moz-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-      -o-transform: translateY(100%);
-  }
-  
-  100%
-  {
-      transform: translateY(-100%);
-      -webkit-transform: translateY(-100%);
-      -moz-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-      -o-transform: translateY(-100%);
-  }
-  }
-  
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#Juan_R .card span {
+    transition: 0.5s;
+}
+
+#Juan_R .card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+    animation: animate1 2s linear infinite;
+    -webkit-animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+}
+
+#Juan_R .card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #1779ff);
+    animation: animate2 2s linear infinite;
+    -webkit-animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+    }
+}
+
+#Juan_R .card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1779ff);
+    animation: animate3 2s linear infinite;
+    -webkit-animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+}
+
+#Juan_R .card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: animate4 1s linear infinite;
+    -webkit-animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+}
+
+
 /* Gabi: robado de Josu. */
 
 section .flipcardTwo-container {
@@ -958,7 +955,6 @@ section .flipcardTwo-container:hover .flipcardTwo {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    
 }
 
 .flipcardTwo>div:nth-child(1) {
@@ -974,14 +970,12 @@ section .flipcardTwo-container:hover .flipcardTwo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .flipcardTwo>div:nth-child(1)>div h2 {
-    background-color: rgba(0, 0, 0, 0.45); 
+    background-color: rgba(0, 0, 0, 0.45);
     padding: 0.5em;
     border-radius: 0.25rem;
-    
 }
 
 .flipcardTwo>div:nth-child(2)::before {
@@ -991,7 +985,7 @@ section .flipcardTwo-container:hover .flipcardTwo {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:url(https://c.tenor.com/XiDVMm0Bcd4AAAAC/eat-noodle-funny.gif);
+    background-image: url(https://c.tenor.com/XiDVMm0Bcd4AAAAC/eat-noodle-funny.gif);
     background-size: cover;
     /* background-color: rgba(0, 0, 0, 0.45); */
 }
@@ -1017,6 +1011,44 @@ section .flipcardTwo-container:hover .flipcardTwo {
     width: 100%;
     height: 100%;
     transform: rotateY(180deg);
+}
+
+
+/* CARD NANI  */
+
+#Nani {
+    background-image: url('./img/fondoNani.jpg');
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nani h2 {
+    font-family: 'Gloria Hallelujah';
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(48 85 112);
+    line-height: 2.5rem;
+    width: 80%;
+}
+
+#Nani h2:hover::after {
+    content: "Por la buena onda y las ganas de incentivarnos a seguir con Front!";
+    font-size: 1rem;
+    line-height: 0.1rem;
+}
+
+#Nani h2:hover::before {
+    content: "Nani.";
+    font-size: 1rem;
+    line-height: 0.1rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 50%;
+    transform: translate(50%, 0);
 }
 
 
