@@ -704,6 +704,7 @@ section .flipcard-container2:hover .flipcard2 {
     font-size:15px;
     font-weight: 300;
     text-align: justify;
+    margin-top: 0px;
   }
   .card-text h2 {
     margin-top:0px;
