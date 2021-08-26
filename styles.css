@@ -1172,6 +1172,76 @@ section .flipcard-container2:hover .flipcard2 {
 }
 
 
+/* CARD MICA PEREZ  */
+
+section .fc-micap {
+    position: relative;
+    background: rgb(237, 21, 203);
+    background: radial-gradient(circle, rgba(237, 21, 203, 1) 0%, rgba(160, 21, 237, 1) 100%);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+section .flipcard-container:hover .fc-micap {
+    transform: rotateX(180deg);
+}
+
+.fc-micap h2,
+.fc-micap p {
+    font-weight: bolder;
+    margin: 0 1%;
+}
+
+.fc-micap>div:nth-child(1),
+.fc-micap>div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fc-micap>div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+.fc-micap>div:nth-child(1)>div,
+.fc-micap>div:nth-child(2)>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fc-micap>div:nth-child(2)>div h2 {
+    margin-bottom: 2rem;
+    z-index: 5;
+}
+
+.fc-micap>div:nth-child(2)>div p:nth-last-child(2) {
+    z-index: 5;
+}
+
+.fc-micap>div:nth-child(2)>div p:nth-last-child(1) {
+    margin-top: 2rem;
+    margin-left: 12rem;
+    z-index: 5;
+}
+
+.fc-micap>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(180deg);
+}
+
+
 /* Gabi: robado de Josu. */
 
 section .flipcardTwo-container {
