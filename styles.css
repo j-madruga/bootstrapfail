@@ -1427,6 +1427,9 @@ section .flipcardTwo-container:hover .flipcardTwo {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .side:nth-of-type(1) {
@@ -1453,7 +1456,7 @@ section .flipcardTwo-container:hover .flipcardTwo {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #c21dba;
+    background-color:#c21dba;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform: rotateX(-90deg) translateZ(-100px);
@@ -1469,8 +1472,6 @@ section .flipcardTwo-container:hover .flipcardTwo {
     font-family: sans-serif;
     color: seashell;
     font-size: 2rem;
-    line-height: 6rem;
-    text-align: center;
 }
 
 
@@ -1948,7 +1949,28 @@ h1.mateo_letra span:nth-child(14) {
     }
 }
 
+/* SANDOVAL */
+.mica-sando {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+}
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
@@ -1974,6 +1996,7 @@ article.rellenar {
     transition: all 0.5s;
     padding: 20px;
     overflow: hidden;
+    text-shadow: 1px 1px 1px black;
 }
 
 article.rellenar:hover {
