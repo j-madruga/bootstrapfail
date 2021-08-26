@@ -1394,7 +1394,7 @@ section .flipcardTwo-container:hover .flipcardTwo {
 /* CARD VICO SUAREZ  */
 
 .victoria-suarez {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg/1200px-NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg%22");
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg/1200px-NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1436,6 +1436,298 @@ section .flipcardTwo-container:hover .flipcardTwo {
     54% {
         transform: scale(1)
     }
+}
+
+
+/* articulo Dahy  */
+
+.card {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 24.5em;
+    gap: 10px;
+    background-color: transparent;
+    perspective: 1000px;
+    border: 0px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #222222;
+    border-radius: 0.5rem;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.flip-card-front .mask .align-end {
+    position: absolute;
+    top: 85%;
+    left: 20px;
+    color: #fafafa;
+    font-size: 1.5em;
+}
+
+.flip-card-back {
+    background-color: #EDFFF6;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letras li span {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 3.55em;
+    line-height: 1;
+    position: relative;
+    color: hsla(0, 0%, 0%, 0.6);
+    transform-style: preserve-3d;
+    perspective: 550px;
+    z-index: 1;
+}
+
+.letras li span:before,
+.letras li span:after {
+    position: absolute;
+    content: attr(nombreLetra);
+    line-height: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.letras li span:before {
+    text-shadow: none;
+    color: hsla(0, 0%, 0%, 0.60);
+}
+
+.letra span:before,
+.letra span:after {
+    transform-origin: 0 50%;
+    transform: rotateY(-15deg);
+}
+
+.letra span:before {
+    transform: scale(1.08, 1) skew(0deg, 1deg);
+}
+
+.letra span:after {
+    transform: rotateY(-15deg);
+}
+
+.letra:hover span:before {
+    transform: scale(0.85, 1) skew(0deg, 20deg);
+}
+
+.letra:hover span:after {
+    transform: rotateY(-40deg);
+}
+
+.letra {
+    background: url('https://i.pinimg.com/originals/fd/bb/5a/fdbb5a14f6e2e8caca5ac61643c69922.gif');
+}
+
+.letra span:after {
+    color: #C70039;
+}
+
+.letra:hover span:after {
+    color: #C70039;
+}
+
+
+/* articulo Mateo */
+
+#mateo {
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: #000;
+  padding: 10px;
+}
+/* styles mateo */
+.cara_mateo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: black;
+}
+.face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #ffcd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face::before {
+  content: "";
+  position: absolute;
+  top: 180px;
+  width: 150px;
+  height: 70px;
+  background: #b57700;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  transition: 0.5s;
+}
+.face:hover::before {
+  top: 210px;
+  width: 150px;
+  height: 20px;
+  background: #b57700;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.eyes {
+  position: relative;
+  top: -40px;
+  display: flex;
+}
+.eyes .eye {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: #fff;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+.eyes .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+}
+/* JUMP  */
+h1.mateo_letra {
+  cursor: default;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+h1.mateo_letra span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1.mateo_letra span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+h1.mateo_letra span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1.mateo_letra span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1.mateo_letra span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1.mateo_letra span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1.mateo_letra span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1.mateo_letra span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1.mateo_letra span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1.mateo_letra span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1.mateo_letra span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1.mateo_letra span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1.mateo_letra span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+h1.mateo_letra span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+.letra_mateo {
+  position: relative;
+  text-align: center;
+  color: #ffcd00;
+
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -1509,7 +1801,7 @@ h2 {
     }
 }
 
-/****************Camilo***********/
+/***********Camilo****************/
 .camilo {
     display: flex;
     position: relative;
@@ -1518,11 +1810,10 @@ h2 {
     background-image: url("https://media.giphy.com/media/QwEihgVZ9E0IEHL2rf/giphy.gif?cid=ecf05e476i11qql9ulvlz59eb51cb449l810npw69cp6tspw&rid=giphy.gif&ct=g");
 }
 .camilo div {
-  color: rgb(255, 255, 255);
+  color: rgba(248, 245, 248, 0.856);
   align-self: flex-end;
 }
 
 .camiloTexto:hover {
-  background-color: #bd060f;
+  background-color: #F89B4D;
 }
-/**************************************************/
