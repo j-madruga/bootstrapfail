@@ -1562,6 +1562,175 @@ section .flipcardTwo-container:hover .flipcardTwo {
 }
 
 
+/* articulo Mateo */
+
+#mateo {
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: #000;
+  padding: 10px;
+}
+/* styles mateo */
+.cara_mateo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: black;
+}
+.face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #ffcd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face::before {
+  content: "";
+  position: absolute;
+  top: 180px;
+  width: 150px;
+  height: 70px;
+  background: #b57700;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  transition: 0.5s;
+}
+.face:hover::before {
+  top: 210px;
+  width: 150px;
+  height: 20px;
+  background: #b57700;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.eyes {
+  position: relative;
+  top: -40px;
+  display: flex;
+}
+.eyes .eye {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: #fff;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+.eyes .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+}
+/* JUMP  */
+h1.mateo_letra {
+  cursor: default;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+h1.mateo_letra span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1.mateo_letra span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+h1.mateo_letra span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1.mateo_letra span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1.mateo_letra span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1.mateo_letra span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1.mateo_letra span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1.mateo_letra span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1.mateo_letra span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1.mateo_letra span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1.mateo_letra span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1.mateo_letra span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1.mateo_letra span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+h1.mateo_letra span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+.letra_mateo {
+  position: relative;
+  text-align: center;
+  color: #ffcd00;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
