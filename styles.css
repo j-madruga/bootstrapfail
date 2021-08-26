@@ -1172,6 +1172,76 @@ section .flipcard-container2:hover .flipcard2 {
 }
 
 
+/* CARD MICA PEREZ  */
+
+section .fc-micap {
+    position: relative;
+    background: rgb(237, 21, 203);
+    background: radial-gradient(circle, rgba(237, 21, 203, 1) 0%, rgba(160, 21, 237, 1) 100%);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+section .flipcard-container:hover .fc-micap {
+    transform: rotateX(180deg);
+}
+
+.fc-micap h2,
+.fc-micap p {
+    font-weight: bolder;
+    margin: 0 1%;
+}
+
+.fc-micap>div:nth-child(1),
+.fc-micap>div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fc-micap>div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+}
+
+.fc-micap>div:nth-child(1)>div,
+.fc-micap>div:nth-child(2)>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fc-micap>div:nth-child(2)>div h2 {
+    margin-bottom: 2rem;
+    z-index: 5;
+}
+
+.fc-micap>div:nth-child(2)>div p:nth-last-child(2) {
+    z-index: 5;
+}
+
+.fc-micap>div:nth-child(2)>div p:nth-last-child(1) {
+    margin-top: 2rem;
+    margin-left: 12rem;
+    z-index: 5;
+}
+
+.fc-micap>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(180deg);
+}
+
+
 /* Gabi: robado de Josu. */
 
 section .flipcardTwo-container {
@@ -1357,6 +1427,9 @@ section .flipcardTwo-container:hover .flipcardTwo {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .side:nth-of-type(1) {
@@ -1383,7 +1456,7 @@ section .flipcardTwo-container:hover .flipcardTwo {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #c21dba;
+    background-color:#c21dba;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform: rotateX(-90deg) translateZ(-100px);
@@ -1399,8 +1472,6 @@ section .flipcardTwo-container:hover .flipcardTwo {
     font-family: sans-serif;
     color: seashell;
     font-size: 2rem;
-    line-height: 6rem;
-    text-align: center;
 }
 
 
@@ -1878,8 +1949,33 @@ h1.mateo_letra span:nth-child(14) {
     }
 }
 
+/* SANDOVAL */
+.mica-sando {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+}
 
+<<<<<<< HEAD
 /* ACA Agus:  */
+=======
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
+>>>>>>> 876b10841be55c722efb3a88ebbfb6aba77f271b
 
 
 section .agustin {
@@ -1998,6 +2094,7 @@ article.rellenar {
     transition: all 0.5s;
     padding: 20px;
     overflow: hidden;
+    text-shadow: 1px 1px 1px black;
 }
 
 article.rellenar:hover {
