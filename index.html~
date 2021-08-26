@@ -340,6 +340,14 @@
             <img src="https://css-tricks.com/wp-content/uploads/2021/04/css-is-awesome.jpg"/>
             <p>Gracias Lu por compartir con nosotros!.</p>
         </article>
+        <article class="bondiolita">
+            <h2>Mica Libo</h2>
+            <p></p>
+        </article>
+        <article class="vicky-ramirez">
+            <h2>Vicky Ramirez</h2>
+            <p></p>
+        </article>
         <article class="agustin flipcard-container">
             <div class="flip">
                 <div>
