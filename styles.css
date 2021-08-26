@@ -1439,6 +1439,129 @@ section .flipcardTwo-container:hover .flipcardTwo {
 }
 
 
+/* articulo Dahy  */
+
+.card {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 24.5em;
+    gap: 10px;
+    background-color: transparent;
+    perspective: 1000px;
+    border: 0px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #222222;
+    border-radius: 0.5rem;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.flip-card-front .mask .align-end {
+    position: absolute;
+    top: 85%;
+    left: 20px;
+    color: #fafafa;
+    font-size: 1.5em;
+}
+
+.flip-card-back {
+    background-color: #EDFFF6;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letras li span {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 3.55em;
+    line-height: 1;
+    position: relative;
+    color: hsla(0, 0%, 0%, 0.6);
+    transform-style: preserve-3d;
+    perspective: 550px;
+    z-index: 1;
+}
+
+.letras li span:before,
+.letras li span:after {
+    position: absolute;
+    content: attr(nombreLetra);
+    line-height: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.letras li span:before {
+    text-shadow: none;
+    color: hsla(0, 0%, 0%, 0.60);
+}
+
+.letra span:before,
+.letra span:after {
+    transform-origin: 0 50%;
+    transform: rotateY(-15deg);
+}
+
+.letra span:before {
+    transform: scale(1.08, 1) skew(0deg, 1deg);
+}
+
+.letra span:after {
+    transform: rotateY(-15deg);
+}
+
+.letra:hover span:before {
+    transform: scale(0.85, 1) skew(0deg, 20deg);
+}
+
+.letra:hover span:after {
+    transform: rotateY(-40deg);
+}
+
+.letra {
+    background: url('https://i.pinimg.com/originals/fd/bb/5a/fdbb5a14f6e2e8caca5ac61643c69922.gif');
+}
+
+.letra span:after {
+    color: #C70039;
+}
+
+.letra:hover span:after {
+    color: #C70039;
+}
+
+
 /* ACA COMIENZA LA CARD DEL SIGUIENTE:  */
 
 
