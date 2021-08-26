@@ -444,6 +444,42 @@ section .flipcard-container:hover .flipcard {
 }
 
 
+/* ARTICULO DE LAURA  */
+
+#Laura {
+    position: relative;
+    border: #C6EA35;
+    border-style: dotted;
+    height: 100%;
+    padding: 10px;
+    font-family: 'DotGothic16', sans-serif;
+    color: #B9E53B;
+    background-color: #FDFDF1;
+    overflow: hidden;
+}
+
+#Laura img {
+    width: 100%;
+}
+
+#Laura img:nth-child(3) {
+    width: 80%;
+    position: relative;
+    bottom: 1.5rem;
+    z-index: 10;
+}
+
+#Laura img:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#Laura h4 {
+    margin-top: 10px;
+}
+
+
 /*Articulo de Natali*/
 
 .natali {
@@ -532,6 +568,7 @@ section .flipcard-container:hover .flipcard {
     font-weight: 700;
 }
 
+
 /* FLOR DH */
 
 section .flipcard-container2 {
@@ -619,8 +656,8 @@ section .flipcard-container2:hover .flipcard2 {
 }
 
 
-
 /* ****Card Farid Cure */
+
 .card-farid {
     display: grid;
     grid-template-columns: 100%;
@@ -628,7 +665,7 @@ section .flipcard-container2:hover .flipcard2 {
     grid-template-areas: "image" "text" "stats";
     border-radius: 10px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     font-family: roboto;
     text-align: center;
     transition: 0.5s ease;
@@ -646,47 +683,42 @@ section .flipcard-container2:hover .flipcard2 {
 }
 
 .card-farid::after {
-    content:"";
-    background: linear-gradient(45deg,
-    #ff0000 0%, 
-    #ff9a00 10%,
-    #d0de21 20%,
-    #4fdc4a 30%, 
-    #3fdad8 40%,
-    #2fc9e2 50%, 
-    #1c7fee 60%, 
-    #5f15f2 70%, 
-    #ba0cf8 80%, 
-    #fb07d9 90%, 
-    #ff0000 100%  )
-    repeat 0% 0% / 300% 100%;
+    content: "";
+    background: linear-gradient(45deg, #ff0000 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%) repeat 0% 0% / 300% 100%;
     position: absolute;
     inset: -3px;
     border-radius: 16px;
     filter: blur(8px);
-    transform: translateZ(-1px); /*or z-index */
+    transform: translateZ(-1px);
+    /*or z-index */
     animation: rgb 6s linear infinite;
-  }
+}
 
-  @keyframes rgb {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  }
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
-  .js-tilt-glare {
+.js-tilt-glare {
     border-radius: 18px;
-  }
+}
 
-  .card-image {
+.card-image {
     grid-area: image;
     background: url("img/farid.png");
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-size: cover;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     grid-area: text;
     margin: 10px;
     transform: translateZ(20px);
@@ -695,60 +727,69 @@ section .flipcard-container2:hover .flipcard2 {
     -ms-transform: translateZ(20px);
     -o-transform: translateZ(20px);
 }
-  .card-text .date {
+
+.card-text .date {
     color: rgb(255, 7, 110);
-    font-size:13px;
-  }
-  .card-text p {
+    font-size: 13px;
+}
+
+.card-text p {
     color: #000;
-    font-size:15px;
+    font-size: 15px;
     font-weight: 300;
     text-align: justify;
     margin-top: 0px;
-  }
-  .card-text h2 {
-    margin-top:0px;
-    font-size:28px;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
     color: #000;
-  }
-  .card-stats {
-    grid-area: stats; 
+}
+
+.card-stats {
+    grid-area: stats;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background: rgb(255, 7, 110);
-  }
-  .card-stats .stat {
-    padding:10px;
+}
+
+.card-stats .stat {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
-  }
-  .card-stats .border {
+}
+
+.card-stats .border {
     border-left: 1px solid rgb(172, 26, 87);
     border-right: 1px solid rgb(172, 26, 87);
-  }
-  .card-stats .value{
-    font-size:22px;
+}
+
+.card-stats .value {
+    font-size: 22px;
     font-weight: 500;
-  }
-  .card-stats .value sup{
-    font-size:12px;
-  }
-  .card-stats .type{
-    font-size:11px;
+}
+
+.card-stats .value sup {
+    font-size: 12px;
+}
+
+.card-stats .type {
+    font-size: 11px;
     font-weight: 300;
     text-transform: uppercase;
-  }
-  .card-farid:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
+}
 
+.card-farid:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
 
 
 /*---------------Angel----------------------------------------*/
