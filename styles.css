@@ -1392,6 +1392,13 @@ article.rellenar:hover > * {
     transition: all 0.5s;
     transform: rotate(1turn);
 }
+article.rellenar h2 {
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+article.rellenar p {
+    margin-top: 8px;
+}
 
 
 footer {
