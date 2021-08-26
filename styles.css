@@ -1394,7 +1394,7 @@ section .flipcardTwo-container:hover .flipcardTwo {
 /* CARD VICO SUAREZ  */
 
 .victoria-suarez {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg/1200px-NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg%22");
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg/1200px-NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg%22');
     display: flex;
     flex-direction: column;
     align-items: center;
