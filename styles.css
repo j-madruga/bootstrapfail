@@ -451,7 +451,7 @@ section .flipcard-container:hover .flipcard {
     background-size: cover;
 }
 
-p {
+.natali p {
     color: #222222;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -1087,6 +1087,104 @@ section .flipcardTwo-container:hover .flipcardTwo {
     bottom: -2rem;
     right: 50%;
     transform: translate(50%, 0);
+}
+
+
+/* CARD MARIA LAURA  */
+
+.perspective {
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+}
+
+.tardis-wrap {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: translateZ(-300px);
+    -webkit-transform: translateZ(-300px);
+}
+
+.tardis {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform: rotateX(-20deg) rotateY(-30deg);
+    -webkit-transform: rotateX(-20deg) rotateY(-30deg);
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+
+.tardis .side {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: #c21dba;
+    box-shadow: inset 1px 0 0 #313d49, inset -1px 0 0 #313d49, inset 0 1px 0 #313d49, inset 0 -1px 0 #313d49;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    z-index: 1;
+}
+
+.side:nth-of-type(1) {
+    transform: translateZ(100px);
+    -webkit-transform: translateZ(100px);
+}
+
+.side:nth-of-type(2) {
+    transform: rotateY(90deg) translateZ(100px);
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+}
+
+.side:nth-of-type(3) {
+    transform: rotateY(180deg) translateZ(100px);
+    -webkit-transform: rotateY(180deg) translateZ(100px);
+}
+
+.side:nth-of-type(4) {
+    transform: rotateY(-90deg) translateZ(100px);
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+
+.tardis .roof {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #c21dba;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-90deg) translateZ(-100px);
+    -webkit-transform: rotateX(-90deg) translateZ(-100px);
+    z-index: 2;
+}
+
+.tenor-gif-embed {
+    height: 100%;
+}
+
+.textlaura {
+    font-family: sans-serif;
+    color: seashell;
+    font-size: 2rem;
+    line-height: 6rem;
+    text-align: center;
 }
 
 
