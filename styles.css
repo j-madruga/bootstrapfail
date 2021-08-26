@@ -1508,3 +1508,21 @@ h2 {
         width: 100%;
     }
 }
+
+/****************Camilo***********/
+.camilo {
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("https://media.giphy.com/media/QwEihgVZ9E0IEHL2rf/giphy.gif?cid=ecf05e476i11qql9ulvlz59eb51cb449l810npw69cp6tspw&rid=giphy.gif&ct=g");
+}
+.camilo div {
+  color: rgba(248, 245, 248, 0.856);
+  align-self: flex-end;
+}
+
+div:hover {
+  background-color: #F89B4D;
+}
+/**************************************************/
