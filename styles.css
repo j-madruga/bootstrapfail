@@ -1357,6 +1357,9 @@ section .flipcardTwo-container:hover .flipcardTwo {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .side:nth-of-type(1) {
@@ -1383,7 +1386,7 @@ section .flipcardTwo-container:hover .flipcardTwo {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #c21dba;
+    background-color:#c21dba;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform: rotateX(-90deg) translateZ(-100px);
@@ -1399,8 +1402,6 @@ section .flipcardTwo-container:hover .flipcardTwo {
     font-family: sans-serif;
     color: seashell;
     font-size: 2rem;
-    line-height: 6rem;
-    text-align: center;
 }
 
 
