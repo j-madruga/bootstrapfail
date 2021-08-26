@@ -1904,6 +1904,7 @@ article.rellenar {
     transition: all 0.5s;
     padding: 20px;
     overflow: hidden;
+    text-shadow: 1px 1px 1px black;
 }
 
 article.rellenar:hover {
