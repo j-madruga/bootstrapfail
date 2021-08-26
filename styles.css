@@ -532,20 +532,12 @@ p {
     font-weight: 700;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-
->>>>>>> 24620557ded8b26c444bcfd6aa5f9c740677315a
 /* FLOR DH */
 
 section .flipcard-container2 {
     perspective: 1000px;
     border: none;
 }
->>>>>>> 69f7f7c655940d7225ee67e667595f5b93cf0ec0
 
 section .flipcard2 {
     position: relative;
