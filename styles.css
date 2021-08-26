@@ -1518,11 +1518,11 @@ h2 {
     background-image: url("https://media.giphy.com/media/QwEihgVZ9E0IEHL2rf/giphy.gif?cid=ecf05e476i11qql9ulvlz59eb51cb449l810npw69cp6tspw&rid=giphy.gif&ct=g");
 }
 .camilo div {
-  color: rgba(248, 245, 248, 0.856);
+  color: rgb(255, 255, 255);
   align-self: flex-end;
 }
 
-div:hover {
-  background-color: #F89B4D;
+.camiloTexto:hover {
+  background-color: #bd060f;
 }
 /**************************************************/
